@@ -1,3 +1,5 @@
+//lesson 13 object literal scripts
+
 const person = {
   firstName: 'shuai',
   lastName: 'wang',
@@ -35,3 +37,6 @@ for(let i = 0; i < people.length; i++){
   console.log(people[i].name);
   console.log(people[i].age);
 }
+
+
+//lesson 14 scripts
