@@ -39,4 +39,29 @@ for(let i = 0; i < people.length; i++){
 }
 
 
-//lesson 14 scripts
+//lesson 14 Dates&Times
+
+let val;
+
+const today = new Date();
+let birthday = new Date('05-10-1988 07:07:07');
+birthday = new Date('october 10 1988');
+birthday = new Date('05/10/1988');
+
+val = today.getMonth();
+val = today.getDate();
+val = today.getDay();
+val = today.getFullYear();
+val = today.getHours();
+val = today.getMinutes();
+val = today.getSeconds();
+val = today.getTime();
+
+
+birthday.setMonth(10);
+birthday.setDate(2);
+birthday.setFullYear(2019);
+
+
+
+console.log(birthday);
