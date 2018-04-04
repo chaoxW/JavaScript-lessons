@@ -57,11 +57,96 @@ val = today.getMinutes();
 val = today.getSeconds();
 val = today.getTime();
 
-
 birthday.setMonth(10);
 birthday.setDate(2);
 birthday.setFullYear(2019);
 
-
-
 console.log(birthday);
+
+//lesson 15 If statements & Comparison operators
+
+const id = 100;
+
+// // equal to
+// if(id == 101){
+//   console.log('correct');
+// } else {
+//   console.log('error');
+// }
+
+// // not eqaul to
+// if(id != 10){
+//   console.log('correct');
+// } else {
+//   console.log('error');
+// }
+
+// // equal to value and type
+
+// if(id === 100){
+//   console.log('correct');
+// } else {
+//   console.log('error');
+// }
+
+// // not equal to value and type
+
+// if(id !== 100){
+//   console.log('correct');
+// } else {
+//   console.log('error');
+// }
+
+
+// test if undefined
+// if (typeof id !== 'undefined') {
+//   console.log(`the id is ${id}`);
+// } else {
+//   console.log('no id')
+// }
+
+//greater oe less than
+
+//if else
+
+// const color = 'yellow';
+
+// if (color === 'red'){
+//   console.log('color is red');
+// } else if (color === 'blue'){
+//   console.log('color is blue')
+// } else {
+//   console.log('color is not red or blue')
+// }
+
+// logical operators
+
+// and &&
+const name = 'Steve';
+const age ='16';
+ if (age >0 && age < 12){
+  console.log(`${name} is a child`);
+ } else if (age >= 13 && age <= 19){
+   console.log(`${name} is a teenager`)
+ } else {
+   console .log(`${name} is a adult`)
+ }
+
+
+ // or  ||
+
+ if (age < 16 || age > 65){
+   console.log(`${name} can not race`);
+ } else {
+   console.log(`${name} is regitered for the race`)
+ }
+
+ // ternary operator
+ console.log(id === 100 ? 'correct' : 'incorrect');
+
+ // without braces
+
+//  if (id === 100)
+//  console.log('correct');
+//  else
+//  console.log('incorrect');
