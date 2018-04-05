@@ -193,3 +193,44 @@ switch(new Date().getDay()){
 }
 
 console.log(`Today is ${day}`)
+
+// lesson 17 Function Declarations & Expressions
+
+function greet(firstName = 'John', lastName = 'Doe'){
+  return 'Hello ' + firstName + ' ' + lastName;
+};
+
+console.log(greet('shuai', 'wang'))
+
+//function expressions
+
+const square = function(x = 3){
+  return x*x;
+};
+
+console.log(square(7));
+
+//immidaitley invokable function expressions - IIFEs
+
+(function(name){
+  console.log('Hello ' + name)
+})('Shuai');
+
+// property methods
+
+const todo = {
+  add: function(){
+    console.log('Add todo..');
+  },
+  edit: function(id){
+    console.log(`Edit todo ${id}`);
+  }
+}
+
+todo.delete = function(){
+  console.log('Delete todo...')
+}
+
+todo.add();
+todo.edit(22);
+todo.delete();
