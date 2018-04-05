@@ -234,3 +234,81 @@ todo.delete = function(){
 todo.add();
 todo.edit(22);
 todo.delete();
+
+//general loops lesson 18
+
+// for loop
+
+// for (let i = 0; i <= 10; i++){
+//   // console.log('Numner is ' + i);
+//   if(i === 2){
+//     console.log('2 is my favorite number');
+//     continue;
+//   }
+//   if(i === 5){
+//     console.log('Stop the loop')
+//     break;
+//   }
+
+//   console.log('Number is ' + i)
+// }
+
+//while loop
+
+// let i = 0;
+
+// while(i < 10){
+//   console.log('number is '+i);
+//   i++;
+// }
+
+// do while
+
+// let i = 0;
+
+// do{
+//   console.log('Number is '+i);
+//   i++;
+// }
+// while(i < 10);
+
+// loop through array
+
+const cars = ['Ferrari', 'BMW', 'Benz', 'Audi'];
+
+// for(let i = 0; i < cars.length; i++){
+//   console.log(cars[i]);
+// }
+
+//forEach
+
+cars.forEach(function(car, index, array){
+  console.log(`${index} : ${car}`);
+  console.log(array)
+})
+
+//MAP 
+
+// const users = [
+//   {id: 1, name: 'Shuai'},
+//   {id: 2, name: 'Yan'},
+//   {id: 3, name: 'hahaha'}
+// ];
+
+// const ids = users.map(function(user){
+//   return user.id;
+// });
+
+// console.log(ids[0]);
+
+//for in loop
+
+const user = {
+  firstName: 'Shuai',
+  lastName: 'Wang',
+  age: 30
+};
+
+for(let x in user){
+  console.log(`${x} : ${user[x]}`);
+};
