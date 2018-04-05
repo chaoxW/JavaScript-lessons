@@ -312,3 +312,64 @@ const user = {
 for(let x in user){
   console.log(`${x} : ${user[x]}`);
 };
+
+// a look at the window object lesson 19
+
+//window methods / onjects / properties
+
+// console.log(123);
+
+// Alert
+// window.alert('hello world')
+
+// Prompt
+
+// const input = prompt(23333);
+// alert(input);
+
+// Confirm
+// if(confirm('Are you sure')){
+//   console.log('YES');
+// } else {
+//   console.log('NO');
+// };
+
+let val;
+
+//Outter height and width
+val = window.outerHeight;
+val = window.outerWidth;
+
+val = window.innerHeight;
+
+// scroll points
+
+
+//location object
+val = window.location;
+val = window.location.hostname;
+val = window.location.port;
+val = window.location.search;
+
+// redirect
+// window.location.href = 'http://google.com';
+
+// reload page
+// window.location.reload();
+
+//history object
+
+// window.history.go(-1);
+val = window.history.length;
+
+//Navigator Object
+val = window.navigator;
+val = window.navigator.appName;
+val = window.navigator.appVersion;
+val = window.navigator.userAgent;
+val = window.navigator.platform;
+val = window.navigator.vendor;
+val = window.navigator.language;
+
+
+console.log(val);
