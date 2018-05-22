@@ -1,7 +1,7 @@
 //lesson 13 object literal scripts
 
 const person = {
-  firstName: 'shuai',
+  firstName: 'shuai2',
   lastName: 'wang',
   age: 30,
   hobbies: ['music', 'sport'],
